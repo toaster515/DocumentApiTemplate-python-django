@@ -1,0 +1,11 @@
+Django>=4.2
+djangorestframework
+django-celery-results
+celery
+redis
+psycopg2-binary
+gunicorn
+drf-spectacular
+boto3
+azure-storage-blob
+
