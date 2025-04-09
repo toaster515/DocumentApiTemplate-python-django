@@ -41,11 +41,16 @@ See `.env.example` for example local setup
 ---
 ## Architecture
 ```bash
+docker/
+├── docker-compose.yml 
 src/
 ├── api/                # Django project config
 ├── application/        # Business logic (use cases)
 ├── infrastructure/
 │   ├── documents/      # Models, serializers, views
 │   └── storage/        # S3 and Azure implementations
+├── .env
+├── Dockerfile
+├── requirements.txt
 ```
 Uses interface-based abstraction for storage providers to keep logic clean and modular.
